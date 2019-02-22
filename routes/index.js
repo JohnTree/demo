@@ -1,0 +1,9 @@
+var arr=[]
+arr=arr.concat(require("./common/home.js"))
+arr=arr.concat(require("./common/login.js"))
+arr=arr.concat(require("./common/sxqSecence.js"))
+arr=arr.concat(require("./common/WhScene.js"))
+arr=arr.concat(require("./common/wsy.js"))
+arr=arr.concat(require("./common/YqSence.js"))
+arr=arr.concat(require("./common/ZdScene.js"))
+module.exports=arr

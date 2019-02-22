@@ -1,0 +1,53 @@
+{
+  "name": "acm",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node modifyRequireSystem.js start",
+    "bundle-ios": "node modifyRequireSystem.js bundle  --entry-file index.ios.js  --platform ios --dev false --bundle-output ./ios/bundle/index.ios.jsbundle --assets-dest ./ios/bundle",
+    "bundle-android": "node modifyRequireSystem.js bundle --entry-file index.android.js  --platform android  --dev false --bundle-output ./android/bundle/index.android.jsbundle --assets-dest ./android/bundle",
+    "make-zip": "node makeBundle.js"
+  },
+  "dependencies": {
+    "archiver": "^1.3.0",
+    "co": "^4.6.0",
+    "events": "^1.1.1",
+    "native-echarts": "^0.3.0",
+    "react": "~15.4.0-rc.4",
+    "react-native": "^0.41.1",
+    "react-native-actionsheet": "^2.0.5",
+    "react-native-blur": "^2.0.0",
+    "react-native-button": "^1.7.1",
+    "react-native-calendar": "^0.12.2",
+    "react-native-circular-progress": "0.0.8",
+    "react-native-drawer": "^2.3.0",
+    "react-native-elements": "^0.9.5",
+    "react-native-gifted-form": "0.0.13",
+    "react-native-image-crop-picker": "^0.12.3",
+    "react-native-linear-gradient": "^2.0.0",
+    "react-native-loader": "^1.1.0",
+    "react-native-pandora": "1.1.7",
+    "react-native-percentage-circle": "^1.0.6",
+    "react-native-picker": "^4.0.18",
+    "react-native-popup-dialog": "^0.7.22",
+    "react-native-pull": "^2.0.1",
+    "react-native-router-flux": "3.37.0",
+    "react-native-scrollable-tab-view": "^0.7.1",
+    "react-native-svg": "5.1.5",
+    "react-native-swipeout": "^2.0.12",
+    "react-native-swiper": "^1.5.4",
+    "react-native-tab-navigator": "^0.3.3",
+    "react-native-vector-icons": "^4.0.0",
+    "react-timer-mixin": "^0.13.3",
+    "rnpm": "^1.9.0"
+  },
+  "devDependencies": {
+    "babel-jest": "18.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "jest": "18.1.0",
+    "react-test-renderer": "~15.4.0-rc.4"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
